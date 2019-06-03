@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>Czat</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    </link>
+</head>
+
+<body>
+    <div>
+        <div id='content'>
+            <div>
+
+                <div id='room'></div>
+                <div id='room-list'></div>
+                <div id='messages'></div>
+                <div>
+
+                    <form id='send-form'>
+                        <input id='send-message' /> <input>
+
+                        <input id='send-button' type='submit' value='Wyslij' />
+                        <div id='help'>
+
+                            <ul>
+                                <li> <code></code></li>
+                                <li><code></code>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <script src='/socket.io/socket.io.js' type='text/javascript'></script>
+                <script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'>
+                </script>
+                <script src='/javascripts/chat.js' type='text/javascript'></script>
+                <script src='/javascripts/chat_ui.js' type='text/javascript'></script>
+</body>
+
+</html>
