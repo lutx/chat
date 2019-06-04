@@ -30,7 +30,7 @@ $(document).ready(function () {
     socket.on('nameResult', function (result) {
         var message;
         if (result.success) {
-            message = 'Twoja nazwa użytkownika to ' + result.name + '.';
+            message = 'Twoja nazwa uzytkownika to ' + result.name + '.';
         } else {
             message = result.message;
         }
@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
     socket.on('joinResult', function (result) {
         $('#room').text(result.room);
-        $('#messages').append(divSystemContentElement('Pokój został zmieniony.'));
+        $('#messages').append(divSystemContentElement('Pokoj został zmieniony.'));
     });
     socket.on('message', function (message) {
         var newElement = $('<div></div>').text(message.text);

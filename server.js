@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var mime = require('mime');
 var cache = {};
-var chatServer = require('./lib/chat_server');
+
 
 
 function send404(response) {
@@ -49,8 +49,11 @@ var server = http.createServer(function (request, response) {
     var absPath = './' + filePath;
     serveStatic(response, cache, absPath);
 });
-chatServer.listen(server);
+
 
 server.listen(3000, function () {
     console.log("Serwer nasłuchuje na porcie 3000.");
 });
+
+var chatServer = require('./lib/chat_server');
+chatServer.listen(server);
