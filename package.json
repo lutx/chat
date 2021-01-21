@@ -4,6 +4,6 @@
     "description": "Minimalistyczny serwer wielopokojowego czatu",
     "dependencies": {
         "mime": "~1.2.7",
-        "socket.io": "^0.9.19"
+        "socket.io": "^2.4.0"
     }
 }
